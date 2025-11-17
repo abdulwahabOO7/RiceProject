@@ -40,7 +40,7 @@ function Footer() {
         {/* Inquiries Section */}
         <section className="inquiries-section">
           <div className="inquiries-header">
-            <h2 className="inquiries-title">Inquiries</h2>
+            <h2 className="inquiries-title">Inquiries testing</h2>
             <p className="inquiries-subtitle">Please send us a message for more information or bulk orders</p>
           </div>
           
