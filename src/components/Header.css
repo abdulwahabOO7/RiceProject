@@ -1,0 +1,167 @@
+.main-header {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 20px 40px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background 0.3s ease;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.logo h1 {
+  color: #8b6914;
+  font-size: 2.2rem;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.logo p {
+  color: #666;
+  font-size: 0.85rem;
+  margin: 4px 0 0 0;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+.main-nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.main-nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 400;
+}
+
+.main-nav a:hover {
+  color: #8b6914;
+}
+
+.dropdown-arrow {
+  font-size: 0.7rem;
+}
+
+.header-icons {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #333;
+  stroke-width: 2;
+}
+
+.icon:hover {
+  color: #8b6914;
+  transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .main-header {
+    padding: 15px 30px;
+  }
+  
+  .logo h1 {
+    font-size: 1.8rem;
+  }
+  
+  .main-nav {
+    gap: 20px;
+  }
+  
+  .main-nav a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    padding: 15px 20px;
+  }
+  
+  .header-content {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+  
+  .logo p {
+    font-size: 0.75rem;
+  }
+  
+  .main-nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .main-nav a {
+    font-size: 0.85rem;
+  }
+  
+  .header-icons {
+    gap: 15px;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-header {
+    padding: 12px 15px;
+  }
+  
+  .logo h1 {
+    font-size: 1.3rem;
+  }
+  
+  .main-nav {
+    gap: 10px;
+  }
+  
+  .main-nav a {
+    font-size: 0.75rem;
+  }
+  
+  .header-icons {
+    gap: 12px;
+  }
+  
+  .icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
